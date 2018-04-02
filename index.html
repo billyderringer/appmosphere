@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Appmosphere</title>
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="main-container">
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo center"><span class="app-brand">App</span>mosphere</a>
+            <ul id="nav-mobile" class="left hide-on-small-and-down">
+                <li><a href="http://billyderringer.com" target="_blank">Return to Portfolio</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Weather Container-->
+    <div class="row weather-container valign-wrapper center">
+        <div class="card col s10 m4 offset-s1 offset-m4">
+            <div class="card-content" id="content">
+                <div class="card-header">
+                    <div id="header-location"></div>
+                </div>
+
+                <div class="weather-info col s12">
+                    <div id="weather-icon"></div>
+                    <div id="temp-container">
+                        <div id="weather-temp"></div>
+                        <a href="#"><div class="inactive" id="unit-f">F</div></a>
+                        <span class="vertical-line">|</span>
+                        <a href="#"><div class="active" id="unit-c">C</div></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+<script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+//variables
+$main-font: "Gill Sans", sans-serif;
+$cursive-font: "Kaushan Script", cursive;
+$phone: 575px;
+$tablet-min: 576px;
+$tablet-max: 991px;
+$desktop-min: 992px;
+//colors
+$light-green: #2bbbad;
+$dark-green: darken($light-green, 20%);
+$purple: #9729b0;
+$light-grey: #343436;
+$dark-grey: #1a1c1d;
+
+//font sizes
+html,body {
+  height: 100%;
+}
+html {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.main-container {
+  min-height: 100%;
+  h1 {
+    font-size: 2.5em;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  h3 {
+    font-size: 1.75em;
+  }
+  h4 {
+    font-size: 1.5em;
+  }
+  h5 {
+    font-size: 1.25em;
+  }
+  h6 {
+    font-size: 1em;
+  }
+  p {
+    font-size: 1em;
+  }
+  li {
+    font-size: 1em;
+  }
+  a {
+    font-size: 1em;
+  }
+
+  //navigation
+  nav {
+    font-family: $main-font;
+    font-weight: lighter;
+    .nav-wrapper {
+      background-color: $light-green;
+      #nav-mobile {
+        margin-left: 20px;
+      }
+      .brand-logo {
+        color: #fff;
+        font-size: 1.5em;
+        font-style: italic;
+        .app-brand {
+          color: $purple;
+          font-size: 1.5em;
+          font-family: $cursive-font;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  //body-section
+  .weather-container {
+    margin-top: 15vh;
+    .card {
+      background-color: $dark-grey;
+      border-bottom: 5px solid $light-green;
+      margin: 0;
+      padding: 0;
+      min-height: 50vh;
+      max-width: 25%;
+      .card-content {
+        padding: 0;
+        .card-header {
+          color: $purple;
+          font-size: 1.5em;
+          background-color: $light-green;
+          padding: 10px;
+          min-width: 100%;
+        }
+        .weather-info {
+          padding: 5vh 0;
+          #weather-icon {
+            margin-bottom: 5vh;
+            display: block;
+          }
+          #temp-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            #weather-temp {
+              color: #fff;
+              font-size: 3em;
+              margin-right: 10px;
+            }
+            #unit-f {
+              font-size: 1.7em;
+              margin-right: 5px;
+            }
+            #unit-c {
+              font-size: 1.7em;
+              margin-left: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //various
+  a {
+    color: inherit;
+  }
+
+  .active {
+    padding: 3px;
+    background-color: $light-green;
+    border-radius: 3px;
+  }
+  .inactive {
+    padding: 3px;
+    background-color: $light-grey;
+    border-radius: 3px;
+    &:hover {
+      background-color: $dark-green;
+      cursor: pointer;
+    }
+  }
+  .vertical-line {
+    color: $light-grey;
+    font-size: 2em;
+    margin: 0 5px;
+  }
+}
